@@ -22,13 +22,13 @@
     ],
     "env": [
       {
-        "name": "PUID",
-        "label": "PUID",
+        "name": "puid",
+        "label": "puid",
         "default": "1000"
       },
       {
-        "name": "PGID",
-        "label": "PGID",
+        "name": "pgid",
+        "label": "pgid",
         "default": "100"
       }
     ]
