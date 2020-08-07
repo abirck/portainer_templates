@@ -16,9 +16,17 @@
         "bind": "/portainer/Music"
       },
       {
-        "container": "/downloads",
+        "container": "/data/Soulseek Downloads",
         "bind": "/portainer/Downloads"
-      }
+      },
+      {
+        "container": "/data/.SoulseekQt",
+        "bind": "/portainer/Files/AppData/Config/SoulseekQt"
+      },
+      {
+        "container": "/data/Soulseek Chat Logs",
+        "bind": "/portainer/Files/AppData/SoulseekQt/Chat"
+      }      
     ],
     "env": [
       {
