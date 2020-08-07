@@ -9,7 +9,7 @@
     "categories": ["Music"],
     "platform": "linux",
     "restart_policy": "unless-stopped",
-    "ports": ["57038:57038/tcp", "57039:57039/tcp"],
+    "ports": ["57038:57038/tcp", "57039:57039/tcp", "6080:6080/tcp"],
     "volumes": [
       {
         "container": "/music",
