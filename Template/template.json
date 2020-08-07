@@ -30,6 +30,11 @@
         "name": "pgid",
         "label": "pgid",
         "default": "100"
+      },
+      {
+        "name": "resolution",
+        "label": "resolution",
+        "default": "1920x1080"
       }
     ]
   },
