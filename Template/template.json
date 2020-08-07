@@ -4,7 +4,7 @@
     "title": "Soulseek",
     "name": "soulseek",
     "description": "Soulseek over NoVNC.",
-    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/Soulseek.png",
+    "logo": "https://raw.githubusercontent.com/abirck/portainer_templates/master/Images/Soulseek.png",
     "image": "realies/soulseek:latest",
     "categories": ["Music"],
     "platform": "linux",
@@ -30,6 +30,31 @@
         "name": "PGID",
         "label": "PGID",
         "default": "100"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Docker Registry Frontend",
+    "name": "docker-registry-frontend",
+    "description": "docker-registry-frontend",
+    "logo": "https://raw.githubusercontent.com/abirck/portainer_templates/master/Images/docker-registry-frontend.png",
+    "image": "konradkleine/docker-registry-frontend:v2",
+    "categories": ["Docker"],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": ["23542:80/tcp"],
+    "volumes": [],
+    "env": [
+      {
+        "name": "ENV_DOCKER_REGISTRY_HOST",
+        "label": "ENV_DOCKER_REGISTRY_HOST",
+        "default": "ENTER-YOUR-REGISTRY-HOST-HERE"
+      },
+      {
+        "name": "ENV_DOCKER_REGISTRY_PORT",
+        "label": "ENV_DOCKER_REGISTRY_PORT",
+        "default": "ENTER-PORT-TO-YOUR-REGISTRY-HOST-HERE"
       }
     ]
   },
